@@ -103,14 +103,6 @@ body {
     border-radius: 50%;
 }
 
-.card-container {
-    padding: 1rem;
-    border-radius: 5px;
-    border: solid 1px #cccccc;
-    background-color: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
 .relative {
     position: relative;
 }
