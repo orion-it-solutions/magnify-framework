@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header-menu.css" />
+    <link rel="stylesheet" href="./css/navbar-menu.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="./lib/google-symbols/main.css" />
+    <script src="./utils/jquery/main.js"></script>
+    <script src="./js/variables.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/navbar-menu.js"></script>
+    <title>Design maker - Home</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header-menu-container">
+            <div class="menu-item-container apps-icon-container">
+                <div class="header-icon-item-container flex align-justify-content-center">
+                    <span class="icon-item material-symbols-outlined">
+                        apps
+                    </span>
+                </div>
+            </div>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <div class="menu-logo-container">
+                        <img class="logo" alt="Image not found" src="./utils/img/magnify-framework.png" />
+                    </div>
+                    <span class="separator-sm"></span>
+                    <p><strong>Magnify Framework</strong></p>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div id="principal-header-collapse" class="header-collapse hidden-scroll">
+                    <div class="menu left">
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">About us</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu right">
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Buscar</p>
+                                <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Emmanuel Toledo Castro</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    account_circle
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-collapse-toggler" to="principal-header-collapse">
+                <span class="icon-item material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div id="left-navbar-container" class="side-navbar-container">
+                <div class="main-content-container light-scroll">
+                    <div class="navbar-item-container">
+                        <div class="navbar-item" action="collapse-navbar" to="left-navbar-container">
+                            <span class="icon-item material-symbols-outlined">
+                                format_list_bulleted
+                            </span>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator active">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                widgets
+                            </span>
+                            <a href="#" class="navbar-item-link">
+                                Widgets module
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                admin_panel_settings
+                            </span>
+                            <a href="./pages/inputs.html" class="navbar-item-link">
+                                Types of inputs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                list_alt
+                            </span>
+                            <a href="./pages/buttons.html" class="navbar-item-link">
+                                Types of buttons
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                public
+                            </span>
+                            <a href="#" class="navbar-item-link">
+                                World Wide Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-container light-scroll">
+                <main class="main-container">
+                    <!-- Use of container. -->
+                    <div class="container">
+                        <h1>Hello World!!!</h1>
+                        <h2>Hello World!!!</h2>
+                        <h3>Hello World!!!</h3>
+                        <h4>Hello World!!!</h4>
+                        <h5>Hello World!!!</h5>
+                        <h6>Hello World!!!</h6>
+                    </div>
+                    <!-- Use of row and columns. -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <p class="text-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Types of controls. -->
+                    <div class="container">
+                        <div class="title-container">
+                            <div class="title-item">
+                                <h3>Use of differents inputs</h3>
+                                <div class="title-bottom-line-indicator"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="full-name">Full name:</label>
+                                    <div class="control-container">
+                                        <input id="full-name" 
+                                               name="full-name"
+                                               class="control" 
+                                               type="text" 
+                                               placeholder="Type your full name..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="full-name">Full name:</label>
+                                    <div class="control-container semi-rounded">
+                                        <input id="full-name" 
+                                               name="full-name"
+                                               class="control" 
+                                               type="text" 
+                                               placeholder="Type your full name..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="search">Search a record:</label>
+                                    <div class="control-container rounded">
+                                        <input id="search" 
+                                               name="search"
+                                               class="control" 
+                                               type="text" 
+                                               placeholder="Search...." />
+                                        <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                            search
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="date">Pick a date:</label>
+                                    <div class="control-container">
+                                        <input id="date" 
+                                               name="date"
+                                               class="control" 
+                                               type="datetime-local" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="date">Pick a date:</label>
+                                    <div class="control-container semi-rounded">
+                                        <input id="date" 
+                                               name="date"
+                                               class="control" 
+                                               type="datetime-local" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="date">Pick a date:</label>
+                                    <div class="control-container rounded">
+                                        <input id="date" 
+                                               name="date"
+                                               class="control" 
+                                               type="date" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="example-select">Choose an option:</label>
+                                    <div class="control-container select">
+                                        <select id="example-select" 
+                                               name="example-select"
+                                               class="control">
+                                            <option>---</option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                            <option>Option #4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="example-select">Choose an option:</label>
+                                    <div class="control-container semi-rounded select">
+                                        <select id="example-select" 
+                                               name="example-select"
+                                               class="control">
+                                            <option>---</option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                            <option>Option #4</option>   
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="example-select">Choose an option:</label>
+                                    <div class="control-container rounded select">
+                                        <select id="example-select" 
+                                               name="example-select"
+                                               class="control">
+                                            <option>---</option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                            <option>Option #4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="comment">Comments:</label>
+                                    <div class="control-container">
+                                        <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="comment">Comments:</label>
+                                    <div class="control-container semi-rounded">
+                                        <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="form-control-container">
+                                    <label class="control-label" for="comment">Comments:</label>
+                                    <div class="control-container rounded">
+                                        <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Types of buttons -->
+                    <h3>Use of differents Buttons</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container button-bg">
+                                        <div class="control-button">
+                                            <p>Click to like</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container button-bg-info">
+                                        <div class="control-button">
+                                            <p>More information</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                info
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container button-bg-danger">
+                                        <div class="control-button">
+                                            <p>Delte record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                delete_sweep
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container button-bg-success">
+                                        <div class="control-button">
+                                            <p>Add new record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                add
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container semi-rounded button-bg">
+                                        <div class="control-button">
+                                            <p>Click to like</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container semi-rounded button-bg-info">
+                                        <div class="control-button">
+                                            <p>More information</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                info
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container semi-rounded button-bg-danger">
+                                        <div class="control-button">
+                                            <p>Delte record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                delete_sweep
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container semi-rounded button-bg-success">
+                                        <div class="control-button">
+                                            <p>Add new record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                add
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg">
+                                        <div class="control-button">
+                                            <p>Click to like</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                favorite
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-info">
+                                        <div class="control-button">
+                                            <p>More information</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                info
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-danger">
+                                        <div class="control-button">
+                                            <p>Delte record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                delete_sweep
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-success">
+                                        <div class="control-button">
+                                            <p>Add new record</p>
+                                            <span class="icon-item left material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                add
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg">
+                                        <div class="control-button">
+                                            <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                favorite
+                                            </span>
+                                            <p>Click to like</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-info">
+                                        <div class="control-button">
+                                            <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                info
+                                            </span>
+                                            <p>More information</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-danger">
+                                        <div class="control-button">
+                                            <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                delete_sweep
+                                            </span>
+                                            <p>Delte record</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-md-3">
+                                <div class="container">
+                                    <div class="control-button-container rounded button-bg-success">
+                                        <div class="control-button">
+                                            <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                add
+                                            </span>
+                                            <p>Add new record</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container flex-row">
+                        <button class="control-button rounded button-bg-warning">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button rounded button-bg-danger">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button rounded button-bg-success">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button rounded button-bg-info">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button rounded button-bg-secondary">
+                            Click here!
+                        </button>
+                    </div>
+                    <div class="container flex-row">
+                        <button class="control-button button-bg-warning">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-danger">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-success">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-info">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-secondary">
+                            Click here!
+                        </button>
+                    </div>
+                    <div class="container flex-row">
+                        <button class="control-button button-bg-warning-outline">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-danger-outline">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-success-outline">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-info-outline">
+                            Click here!
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-secondary-outline">
+                            Click here!
+                        </button>
+                    </div>
+                    <div class="container flex-row">
+                        <button class="control-button button-bg-warning-outline rounded">
+                            Search a record
+                            <span class="icon-item material-symbols-outlined left" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                search
+                            </span>
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-danger-outline rounded">
+                            <span class="icon-item material-symbols-outlined right" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                search
+                            </span>
+                            Search a record
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-success-outline rounded">
+                            Filter
+                            <span class="icon-item material-symbols-outlined left" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                filter_list
+                            </span>
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-info-outline rounded">
+                            Refresh
+                            <span class="icon-item material-symbols-outlined left" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                refresh
+                            </span>
+                        </button>
+                        <span class="separator-sm"></span>
+                        <button class="control-button button-bg-secondary-outline rounded">
+                            <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                info
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Use of Card -->
+                    <br><br><br>
+                    <div class="card-container">
+                        <h3>Example of use of card</h3>
+                    </div>
+                    <br><br><br>
+                    <div class="container">
+                        <div class="table-container linear light-scroll">
+                            <table class="linear-table">
+                                <thead>
+                                    <tr>
+                                        <th class="first" scope="col">
+                                            <p>Identificador</p>
+                                        </th>
+                                        <th scope="col">
+                                            <p>Documento</p>
+                                        </th>
+                                        <th scope="col">
+                                            <p>Fecha límite</p>
+                                        </th>
+                                        <th scope="col">
+                                            <p>Estatus</p>
+                                        </th>
+                                        <th scope="col">
+                                            <p>Acciones</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr scope="row">
+                                        <td class="first">
+                                            <span class="table-row-indicator"></span>
+                                            <div class="flex align-items-center">
+                                                # 1
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                Acta de nacimiento
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                29 de Junio del 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    flag
+                                                </span> 
+                                                <p>
+                                                    Pendiente
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <p class="upload-document">Subir nuevo documento</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr scope="row">
+                                        <td class="first">
+                                            <span class="table-row-indicator"></span>
+                                            <div class="flex align-items-center">
+                                                # 2
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                Comprobante de domicilio
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                29 de Junio del 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    flag
+                                                </span> 
+                                                <p>
+                                                    Pendiente
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <span class="icon-item icon-item-lg click material-symbols-outlined" COLOR="green" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    add_circle
+                                                </span>
+                                                <span class="icon-item icon-item-lg click material-symbols-outlined" COLOR="red" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    cancel
+                                                </span>
+                                                <span class="icon-item icon-item-lg click material-symbols-outlined" COLOR="#0083b3" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    downloading
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr scope="row">
+                                        <td class="first">
+                                            <span class="table-row-indicator"></span>
+                                            <div class="flex align-items-center">
+                                                # 3
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                Identificación oficial
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                29 de Junio del 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    flag
+                                                </span> 
+                                                <p>
+                                                    Pendiente
+                                                </p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <p class="upload-document">Subir nuevo documento</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br><br><br><br><br>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

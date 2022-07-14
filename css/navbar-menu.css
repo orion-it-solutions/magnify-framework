@@ -1,0 +1,119 @@
+/* General navbar menu styles */
+.side-navbar-container {
+    height: 100%;
+    width: 15rem;
+    flex-shrink: 0;
+    transition: .3s;
+    position: relative;
+    background-color: #FAFAFA;
+    border-right: .5px solid #CCCCCC;
+}
+
+.navbar-item-container {
+    display: flex;
+    min-height: 3rem;
+    /* padding: 0 0.75rem; */
+    padding: 0 15px;
+    /* padding: 0 15.25px; */
+    /* padding: 0 1rem; */
+    overflow-x: hidden;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar-item-container .navbar-item {
+    display: flex;
+    cursor: pointer;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: rebeccapurple; */
+}
+
+.navbar-item-container.background-indicator.active {
+    background-color: var(--background-magnify-framework);
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.navbar-item-container.background-indicator.active * {
+    color: var(--color-white);
+}
+
+.navbar-item-container.inline-indicator {
+    position: relative;
+}
+
+.navbar-item-container.inline-indicator.active .navbar-item-indicator {
+    left: 1px;
+    width: 3px;
+    height: 1.4rem;
+    position: absolute;
+    background-color: var(--background-magnify-framework);
+}
+
+.navbar-item-container.inline-indicator.active * {
+    color: var(--color-black);
+}
+
+.navbar-item .icon-item {
+    margin-right: 0.875rem;
+}
+
+.navbar-item[role=collapse-navbar] .icon-item {
+    margin-right: 0rem;
+}
+
+.navbar-item .navbar-item-link {
+    width: max-content;
+    white-space: nowrap; /* New (Used to don't move the text on hide menu) */
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: var(--small-font-size);
+    font-weight: var(--regular-font-weight);
+}
+
+/* Collapsed navbar menu styles */
+.side-navbar-container.collapsed {
+    margin: 0;
+    width: 3.125rem;
+}
+
+.side-navbar-container.collapsed .navbar-item-container {
+    padding: 0;
+}
+
+.side-navbar-container.collapsed .navbar-item-container .navbar-item {
+    padding: 0 15px;
+}
+
+.side-navbar-container.collapsed .navbar-item-link {
+    display: none;
+}
+
+/* Media screen to Desktop application. */
+/* @media screen and (max-width: 1024px) {
+
+    .side-navbar-container {
+        width: 55px;
+    }
+} */
+
+
+/* Media screen to Desktop application. */
+@media screen and (min-width: 1024px) {
+    
+}
+
+/* Media screen to Tablet application. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* .side-navbar-container {
+        width: 3.125rem;
+    } */
+}
+
+/* Media screen to Mobile application. */
+@media screen and (min-width: 767px) {
+    
+}
