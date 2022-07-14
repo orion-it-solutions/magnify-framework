@@ -1,0 +1,163 @@
+/* General control styles. */
+.form-control-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color: #008000; */
+}
+
+.form-control-container.inline {
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-control-container .control-label {
+    width: fit-content;
+    min-width: fit-content;
+    margin-bottom: 0.625rem;
+    font-size: 15px;
+}
+
+.form-control-container.inline .control-label {
+    margin-bottom: 0;
+    margin-right: 1.25rem;
+}
+
+.form-control-container .control-label.rounded {
+    padding-left: 0.875rem;
+}
+
+.form-control-container .control-container:focus-within {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.control-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #ced4da;
+    background-color: var(--color-white);
+    /* background-color: rebeccapurple; */
+}
+
+.control-container .icon-item { 
+    /* margin-right: 0.875rem; */
+    margin-right: 1.25rem;
+}
+
+/* .control-container .control {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    // padding: 0.5rem 0.875rem;
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+} */
+
+.control-container.select select.control {
+    z-index: 99;
+}
+
+.control-container select.control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Control sizes */
+.control {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem !important;
+    background-color: transparent;
+}
+
+.control-container.select:after {
+    /* right: 15px; */
+    z-index: 98;
+    content: "";
+    right: 1.25rem;
+    position: absolute;
+    border-top: 5px solid #000000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.control:not(textarea) {
+    height: 35px;
+}
+
+textarea.control {
+    height: auto;
+    min-height: 35px;
+    resize: vertical;
+}
+
+.control.control-sm {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem !important;
+}
+
+.control.control-sm:not(textarea) {
+    height: 30px;
+}
+
+textarea.control.control-sm {
+    height: auto;
+    min-height: 30px;
+    resize: vertical;
+    padding-top: 0.5rem;
+}
+
+.control.control-md {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem !important;
+}
+
+.control.control-md:not(textarea) {
+    height: 35px;
+}
+
+textarea.control.control-md {
+    height: auto;
+    min-height: 35px;
+    resize: vertical;
+    padding-top: 0.6rem;
+}
+
+.control.control-lg {
+    height: 42px;
+    padding: 0.6rem 1.25rem;
+    font-size: 1rem !important;
+}
+
+.control.control-lg:not(textarea) {
+    height: 42px;
+}
+
+textarea.control.control-lg {
+    height: auto;
+    min-height: 42px;
+    resize: vertical;
+    padding-top: 0.65rem;
+}
+
+
+/* Control textarea special styles. */
+/* .control-container .control:not(textarea) {
+    height: 35px;
+} */
+
+/* .control-container textarea.control {
+    height: auto;
+    min-height: 35px;
+    resize: vertical;
+} */

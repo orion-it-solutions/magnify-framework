@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".././css/main.css" />
+    <link rel="stylesheet" href=".././css/header-menu.css" />
+    <link rel="stylesheet" href=".././css/navbar-menu.css" />
+    <link rel="stylesheet" href=".././css/layout.css" />
+    <link rel="stylesheet" href=".././css/form.css" />
+    <link rel="stylesheet" href=".././css/table.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href=".././lib/google-symbols/main.css" />
+    <script src=".././utils/jquery/main.js"></script>
+    <script src=".././js/variables.js"></script>
+    <script src=".././js/main.js"></script>
+    <script src=".././js/navbar-menu.js"></script>
+    <script src=".././js/header-menu.js"></script>
+    <title>Design maker - Inputs</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header-menu-container">
+            <div class="menu-item-container apps-icon-container">
+                <div class="header-icon-item-container flex align-justify-content-center">
+                    <span class="icon-item material-symbols-outlined">
+                        apps
+                    </span>
+                </div>
+            </div>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <div class="menu-logo-container">
+                        <img class="logo" alt="Image not found" src=".././utils/img/magnify-framework.png" />
+                    </div>
+                    <span class="separator-sm"></span>
+                    <p><strong>Magnify Framework</strong></p>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div id="principal-header-collapse" class="header-collapse hidden-scroll">
+                    <div class="menu left">
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">About us</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu right">
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Buscar</p>
+                                <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Emmanuel Toledo Castro</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    account_circle
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-collapse-toggler" to="principal-header-collapse">
+                <span class="icon-item material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div id="left-navbar-container" class="side-navbar-container">
+                <div class="main-content-container light-scroll">
+                    <div class="navbar-item-container">
+                        <div class="navbar-item" action="collapse-navbar" to="left-navbar-container">
+                            <span class="icon-item material-symbols-outlined">
+                                format_list_bulleted
+                            </span>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                widgets
+                            </span>
+                            <a href="./../index.html" class="navbar-item-link">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator active">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                admin_panel_settings
+                            </span>
+                            <a href="./inputs.html" class="navbar-item-link">
+                                Types of inputs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                list_alt
+                            </span>
+                            <a href="./buttons.html" class="navbar-item-link">
+                                Types of buttons
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container inline-indicator darken-hover">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                public
+                            </span>
+                            <a href="#" class="navbar-item-link">
+                                World Wide Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-container light-scroll">
+                <main class="main-container">
+                    <div class="container">
+                        <div class="title-container">
+                            <div class="title-item">
+                                <h2>Use of differents inputs</h2>
+                                <div class="title-bottom-line-indicator"></div>
+                            </div>
+                        </div>
+                        <!-- Sample inputs -->
+                        <h3>Sample inputs</h3>
+                        <div>
+                            <br />
+                            <div>
+                                <p>Small input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control control-sm" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control control-sm" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-sm">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container">
+                                                <textarea id="comment" name="comment" class="control control-sm" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Regular (medium) input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container">
+                                                <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Large input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control control-lg" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control control-lg" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-lg">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container">
+                                                <textarea id="comment" name="comment" class="control control-lg" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                        <!-- Semi-rounded inputs -->
+                        <h3>Semi-rounded inputs</h3>
+                        <div>
+                            <br />
+                            <div>
+                                <p>Small input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control control-sm" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control control-sm" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container semi-rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-sm">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>   
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container semi-rounded">
+                                                <textarea id="comment" name="comment" class="control control-sm" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Regular (medium) input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container semi-rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>   
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container semi-rounded">
+                                                <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Large input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="full-name">Full name:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="full-name" 
+                                                       name="full-name"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Type your full name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control control-lg" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="date" 
+                                                       name="date"
+                                                       class="control control-lg" 
+                                                       type="datetime-local" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container semi-rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-lg">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>   
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container semi-rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container semi-rounded">
+                                                <textarea id="comment" name="comment" class="control control-lg" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                        <!-- Rounded inputs -->
+                        <h3>Rounded inputs</h3>
+                        <div>
+                            <br />
+                            <div>
+                                <p>Small input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container rounded">
+                                                <input id="date" 
+                                                        name="date"
+                                                        class="control control-sm" 
+                                                        type="date" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-sm">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-sm" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container rounded">
+                                                <textarea id="comment" name="comment" class="control control-sm" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Regular (medium) input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container rounded">
+                                                <input id="date" 
+                                                        name="date"
+                                                        class="control" 
+                                                        type="date" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container rounded">
+                                                <textarea id="comment" name="comment" class="control" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <p>Large input</p>
+                                <br />
+                                <div class="row">
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="file-input">Choose a file:</label>
+                                            <div class="control-container rounded">
+                                                <input id="file-input" 
+                                                       name="file-input"
+                                                       class="control control-lg" 
+                                                       type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="date">Pick a date:</label>
+                                            <div class="control-container rounded">
+                                                <input id="date" 
+                                                        name="date"
+                                                        class="control control-lg" 
+                                                        type="date" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="example-select">Choose an option:</label>
+                                            <div class="control-container rounded select">
+                                                <select id="example-select" 
+                                                       name="example-select"
+                                                       class="control control-lg">
+                                                    <option>---</option>
+                                                    <option>Option #1</option>
+                                                    <option>Option #2</option>
+                                                    <option>Option #3</option>
+                                                    <option>Option #4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="search">Search a record:</label>
+                                            <div class="control-container rounded">
+                                                <input id="search" 
+                                                       name="search"
+                                                       class="control control-lg" 
+                                                       type="text" 
+                                                       placeholder="Search...." />
+                                                <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    search
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column-container column-md-4">
+                                        <div class="form-control-container">
+                                            <label class="control-label" for="comment">Comments:</label>
+                                            <div class="control-container rounded">
+                                                <textarea id="comment" name="comment" class="control control-lg" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
