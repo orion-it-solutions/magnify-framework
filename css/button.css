@@ -1,4 +1,10 @@
-/* Buttons styles */
+/**
+ * Subject: Button styles class.
+ * Descripcion: This class contains all the styles used for buttons in the framework.
+ * Last updated: Jul 14, 2022
+**/
+
+/** Buttons styles **/
 .control-button-container {
     overflow: visible;
     width: fit-content;
@@ -97,7 +103,7 @@
     max-height: 18px !important;
 }
 
-/* Circular button sizes */
+/** Circular button sizes **/
 .control-button.circular {
     width: 35px;
     height: 35px;
@@ -173,7 +179,7 @@
     max-height: 18px !important;
 }
 
-/* Button backgrounds */
+/** Button backgrounds **/
 .button-info {
     color: var(--color-white);
     background-color: rgb(0, 131, 179);

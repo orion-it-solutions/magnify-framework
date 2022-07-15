@@ -161,3 +161,57 @@ textarea.control.control-lg {
     min-height: 35px;
     resize: vertical;
 } */
+
+
+/** Dropdown styles **/
+.dropdown-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    margin: 0;
+    z-index: 100;
+    display: none;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    min-width: 12.5rem;
+    padding: .5rem 0rem;
+    /* border-radius: 0.25rem; */
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+}
+
+.dropdown-menu.show {
+    margin: 0px;
+    display: block;
+    inset: 0px auto auto 0px;
+    transform: translate(0px, 40px);
+}
+
+.dropdown-menu .dropdown-item {
+    border: 0;
+    width: 100%;
+    clear: both;
+    display: block;
+    transition: .5s;
+    white-space: nowrap;
+    text-align: inherit;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* padding: 0.25rem 1rem; */
+    color: var(--color-black);
+    background-color: transparent;
+}
+
+.dropdown-toggle.menu-item .dropdown-menu.show{
+    right: 10px;
+    display: block;
+    margin-top: 10px;
+}
