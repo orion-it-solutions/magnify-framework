@@ -1,11 +1,26 @@
+/**
+ * Subject: Main styles class.
+ * Descripcion: This class contains all the main styles used in the framework.
+ * Last updated: Jul 14, 2022
+**/
+
+/** Principal containers configuration **/
 :root {
     --background-magnify-framework: #5E4A9F;
+
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-gray: #A0A0A0;
+    --color-gray-light: #CCCCCC;
+    
     --small-font-size: 0.875rem;
+    --regular-font-size: 1rem;
+    --large-font-size: 1.25rem;
+
     --light-font-weight: 300;
     --regular-font-weight: 400;
     --semibold-font-weight: 600;
+    --bold-font-weight: bold;
 }
 
 * {
@@ -13,40 +28,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-}
-
-.material-symbols-outlined::before {
-    content: "" !important;
-}
-
-.hidden-scroll::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
-.light-scroll::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-}
-
-.light-scroll::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-    border-radius: 0px;
-}
-
-.light-scroll::-webkit-scrollbar-thumb {
-    background-color: #c1c1c1;
-    border-radius: 0px;
-}
-
-div.lighten-hover:hover {
-    transition: .5s;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)); /* Takes itself background color or pather background, itselft as first option but more ligth. */
-}
-
-div.darken-hover:hover {
-    transition: .5s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.050), rgba(0, 0, 0, 0.050)); /* Takes itself background color or pather background, itselft as first option but more ligth. */
 }
 
 html {
@@ -87,10 +68,27 @@ body {
     position: relative;
 }
 
-.container {
-    padding: 15px;
+/** Position styles **/
+.relative {
+    position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
+/** Hover styles **/
+*.lighten-hover:hover {
+    transition: .5s;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)); /** Takes itself background color or pather background, itselft as first option but more ligth. **/
+}
+
+*.darken-hover:hover {
+    transition: .5s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.090), rgba(0, 0, 0, 0.090)); /** Takes itself background color or pather background, itselft as first option but more ligth. **/
+}
+
+/** Border radious styles **/
 *.semi-rounded {
     border-radius: 0.625rem;
 }
@@ -103,26 +101,25 @@ body {
     border-radius: 50%;
 }
 
-.relative {
-    position: relative;
+/** Shadow and background styles **/
+.light-shadow {
+    box-shadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
 }
 
-.absolute {
-    position: absolute;
-}
-
-.shadow {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.dark-shadow {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
 }
 
 .transparent {
     background-color: transparent;
 }
 
+/** Click styles **/
 .click {
     cursor: pointer;
 }
 
+/** Separators styles **/
 .separator-sm {
     width: 15px;
     height: 100%;
@@ -138,6 +135,7 @@ body {
     height: 100%;
 }
 
+/** Icon item styles **/
 .icon-item-container {
     width: 50px;
     height: 100%;
@@ -164,47 +162,67 @@ body {
     font-size: 1.5rem !important;
 }
 
-.title-container {
-    width: 100%;
-    margin-bottom: 30px;
+/** Text color styles **/
+.black-text-color {
+    color: var(--color-black);
 }
 
-.title-item {
-    width: fit-content;
+.white-text-color {
+    color: var(--color-white);
 }
 
-.title-bottom-line-indicator {
-    width: 80%;
-    height: 4px;
-    min-height: 3px;
-    margin-top: 10px;
-    background-color: var(--background-magnify-framework);
+.light-text-color {
+    color: var(--color-gray);
 }
 
-.text-left {
+.removed-text-decoration {
+    text-decoration: none;
+}
+
+/** Font text align styles **/
+.text-align-left {
     text-align: left;
 }
 
-.text-right {
+.text-align-right {
     text-align: right;
 }
 
-.text-center {
+.text-align-center {
     text-align: center;
 }
 
-.font-normal {
-    font-weight: normal;
+/** Font size styles **/
+.small-font-size {
+    font-size: var(--small-font-size);
 }
 
-.font-semibold {
-    font-weight: 600;
+.regular-font-size {
+    font-size: var(--regular-font-size);
 }
 
-.font-bold {
-    font-weight: bold;
+.large-font-size {
+    font-size: var(--large-font-size);
 }
 
+/** Font weight styles **/
+.font-weight-light {
+    font-weight: var(--light-font-weight);
+}
+
+.font-weight-normal {
+    font-weight: var(--regular-font-weight);
+}
+
+.font-weight-semibold {
+    font-weight: var(--semibold-font-weight);
+}
+
+.font-weight-bold {
+    font-weight: var(--bold-font-weight);
+}
+
+/** Element position styles **/
 .left {
     float: left;
 }
@@ -213,6 +231,7 @@ body {
     float: right;
 }
 
+/** Flex properties styles **/
 .flex {
     display: flex;
 }
@@ -237,6 +256,7 @@ body {
     flex-direction: column-reverse;
 }
 
+/** Align items and justify content styles **/
 .align-items-stretch {
     align-items: stretch;
 }
@@ -254,6 +274,7 @@ body {
     justify-content: center;
 }
 
+/** Width styles **/
 .width-fit-content {
     width: fit-content !important;
 }
@@ -274,6 +295,11 @@ body {
     width: 100%;
 }
 
+/** Height styles **/
+.height-fit-content {
+    height: fit-content !important;
+}
+
 .height-25-p {
     height: 25%;
 }
@@ -290,6 +316,7 @@ body {
     height: 100%;
 }
 
+/** Margin and padding styles **/
 .margin-0 {
     margin: 0;
 }
