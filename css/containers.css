@@ -1,7 +1,7 @@
 /**
  * Subject: Containers styles class.
  * Descripcion: This class contains all the styles for containers in the framework.
- * Last updated: Jul 14, 2022
+ * Last updated: Jul 15, 2022
 **/
 
 /** Principal container styles **/
@@ -16,10 +16,6 @@
 
 .container-inline > * {
     display: inline-block !important;
-}
-
-.container-inline > *:not(:last-child) {
-    margin-bottom: 10px;
 }
 
 /** Title containers styles **/
@@ -75,16 +71,20 @@
     background-color: var(--color-white);
 }
 
-.card .card-header,
-.card .card-body,
-.card .card-footer {
-    flex: 1 1 auto;
-    padding: 1rem 1.5rem;
+.card .card-top-image {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.card .card-bottom-image {
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
 }
 
 .card .card-header {
     display: flex;
     align-items: center;
+    padding: 1rem 1.5rem;
     justify-content: space-between;
     border-bottom: .5px solid #cccccc;
 }
@@ -105,16 +105,34 @@
     font-size: 1.25rem !important;
 }
 
+.card .card-footer {
+    flex: 1 1 auto;
+    padding: .875rem 1.5rem;
+    border-top: .5px solid var(--color-gray-light);
+}
+
+.card .card-body {
+    padding: 1rem 1.5rem;
+}
+
+.card .card-body :last-child {
+    margin-bottom: 0;
+}
+
+.card-body .card-title {
+    margin-bottom: 1.2rem;
+}
+
 .card-title {
     font-size: var();
     font-weight: var(--semibold-font-weight);
 }
 
-.card .card-body > *:not(:last-child) {
-    display: block;
-    margin-bottom: 1rem;
+.card-text {
+    margin-bottom: 1.5rem;
 }
 
 .card-link-inline+.card-link-inline {
     margin-left: 1rem;
+    display: inline-block;
 }
