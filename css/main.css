@@ -6,7 +6,7 @@
 
 /** Principal containers configuration **/
 :root {
-    --background-magnify-framework: #5E4A9F;
+    --background-magnify-framework: #6e35ae;
 
     --color-black: #000000;
     --color-white: #FFFFFF;
@@ -28,6 +28,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
 html {
@@ -75,6 +79,47 @@ body {
 
 .absolute {
     position: absolute;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/** Absolute element position **/
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.left-auto {
+    left: auto;
+}
+
+.right-auto {
+    right: auto;
+}
+
+.top-auto {
+    top: auto;
+}
+
+.bottom-auto {
+    bottom: auto;
 }
 
 /** Hover styles **/
@@ -220,15 +265,6 @@ body {
 
 .font-weight-bold {
     font-weight: var(--bold-font-weight);
-}
-
-/** Element position styles **/
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
 }
 
 /** Flex properties styles **/
