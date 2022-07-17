@@ -9,21 +9,30 @@
     width: 100%;
     height: 100%;
     z-index: 100;
-    display: flex;
+    display: none;
     position: absolute;
     align-items: center;
     justify-content: center;
     background-color: var(--color-black);
 }
 
+.loader-container.active {
+    display: flex;
+}
+
 .loader-container .loader-text {
     width: 100%;
     margin-top: 1rem;
     text-align: center;
-    color: var(--color-white);
 }
 
-/* Loader completing loader.ring styles */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Ring loader styles **/
 .loader.ring {
     display: flex;
     width: 6.25rem;
@@ -36,7 +45,6 @@
 .loader.ring .ring-child {
     width: 5rem;
     height: 5rem;
-    /* margin: .5rem; */
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -65,5 +73,85 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/** Ripple loader styles **/
+.loader.ripple {
+    width: 6.25rem;
+    height: 6.25rem;
+    position: relative;
+}
+
+.loader.ripple .ripple-child {
+    opacity: 1;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    animation: ripple 1.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.loader.ripple .ripple-child:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+/** Circular loader **/
+.loader.circular .circular-child {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 33%, #ffffff 100%);
+}
+
+.loader.circular .circular-child::after {
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 2.75rem;
+    height: 2.75rem;
+    position: absolute;
+    border-radius: 50%;
+    /* background: #263238; */
+    background: #000000;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
     }
 }

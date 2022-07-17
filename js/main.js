@@ -9,25 +9,57 @@ $(document).ready(function() {
      * Function to initialize all the components and functions used in Magnify framework.
      */
     function Initialize() {
+        DisplayLoader(true);
         SetCustomProperties();
+        setLoaderCustomProperties();
         InitializeCollapseNavbar();
         ConfigureResizeHeaders();
         window.onresize = OnResizeHeaderMenu;
         OnResizeHeaderMenu();
+        setTimeout(function() {
+            DisplayLoader(false);
+        }, 1000);
     }
 
     /**
      * Function to set the custom properties provided by attributes of the elements.
      */
     function SetCustomProperties() {
-        $("*").each(function(index, element) {
-            const color = $(element).attr("mf-color");
-            const background = $(element).attr("mf-background-color");
+        $("*").each(function (index, item) {
+            const color = $(item).attr("mf-color");
+            const background = $(item).attr("mf-background-color");
             if(color)
-                $(element).css("color", color);
+                $(item).css("color", color);
             if(background)
-                $(element).css("background-color", background);
+                $(item).css("background-color", background);
         });
+    }
+
+    /**
+     * Function to sset the custom properties provided by attributes of the loader containers.
+     */
+    function setLoaderCustomProperties() {
+        $(".loader").each(function (index, item) {
+            const background = $(item).attr("mf-loader-background-color");
+            const gradientBackground = $(item).attr("mf-loader-gradient-background-color");
+            if($(item).hasClass("ring")) {
+                $(item).children(".ring-child").css("border-color", background + " transparent transparent transparent");
+            }
+            if($(item).hasClass("ripple")) {
+                $(item).children(".ripple-child").css("border-color", background);
+            }
+            if($(item).hasClass("circular")) {
+                $(item).children(".circular-child").css("background", "linear-gradient(0deg, " + gradientBackground + " 33%, " + background + " 100%)");
+            }
+        });
+    }
+
+    /**
+     * Function to display the loader if exists one in the page.
+     */
+    function DisplayLoader(display = false) {
+        const loader = $(".loader-container[mf-page-loader='true']");
+        display ? $(loader).addClass("active") : $(loader).removeClass("active");
     }
 
     /**

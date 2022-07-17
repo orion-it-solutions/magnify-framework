@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/tables.css" />
     <link rel="stylesheet" href="./css/containers.css" />
     <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/scrolls.css" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
     <link rel="stylesheet" href="./lib/google-symbols/main.css" />
@@ -97,6 +98,16 @@
             </div>
         </div>
         <div class="main">
+            <div class="loader-container active" mf-background-color="#ffffff" mf-page-loader="true">
+                <div class="container">
+                    <div class="loader ripple" mf-loader-background-color="#6e35ae" mf-loader-gradient-background-color="#6e35ae80">
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                    </div>
+                    <p class="loader-text large-font-size font-weight-semibold black-text-color">Cargando...</p>
+                </div>
+            </div>
             <div id="left-navbar-container" class="side-navbar-container collapsed">
                 <div class="main-content-container light-scroll">
                     <div class="navbar-item-container">
@@ -346,52 +357,48 @@
                         </div>
                         <div class="row">
                             <div class="column-container column-lg-4 container">
-                                <p>Loader type ring</p>
+                                <p>Ring loader</p>
                                 <br />
                                 <div class="relative" style="height: 200px;">
-                                    <div class="loader-container" mf-background-color="#A0A0A0">
+                                    <div class="loader-container active" mf-background-color="#A0A0A0" mf-ignore="true">
                                         <div class="container">
-                                            <div class="loader ring">
+                                            <div class="loader ring" >
                                                 <div class="ring-child"></div>
                                                 <div class="ring-child"></div>
                                                 <div class="ring-child"></div>
                                                 <div class="ring-child"></div>
                                             </div>
-                                            <p class="loader-text">Cargando...</p>
+                                            <p class="loader-text white-text-color">Cargando...</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="column-container column-lg-4 container">
-                                <p>Loader type ring</p>
+                                <p>Ripple loader</p>
                                 <br />
                                 <div class="relative" style="height: 200px;">
-                                    <div class="loader-container" mf-background-color="#A0A0A0">
+                                    <div class="loader-container active" mf-background-color="#A0A0A0" mf-ignore="true">
                                         <div class="container">
-                                            <div class="loader ring">
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
+                                            <div class="loader ripple" >
+                                                <div class="ripple-child"></div>
+                                                <div class="ripple-child"></div>
+                                                <div class="ripple-child"></div>
                                             </div>
-                                            <p class="loader-text">Cargando...</p>
+                                            <p class="loader-text white-text-color">Cargando...</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="column-container column-lg-4 container">
-                                <p>Loader type ring</p>
+                                <p>Circularloader</p>
                                 <br />
                                 <div class="relative" style="height: 200px;">
-                                    <div class="loader-container" mf-background-color="#A0A0A0">
+                                    <div class="loader-container active" mf-background-color="#A0A0A0" mf-ignore="true">
                                         <div class="container">
-                                            <div class="loader ring">
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
-                                                <div class="ring-child"></div>
+                                            <div class="loader circular" >
+                                                <div class="circular-child"></div>
                                             </div>
-                                            <p class="loader-text">Cargando...</p>
+                                            <p class="loader-text white-text-color">Cargando...</p>
                                         </div>
                                     </div>
                                 </div>
