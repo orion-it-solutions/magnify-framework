@@ -176,6 +176,7 @@ textarea.control.control-lg {
 
 .dropdown-menu {
     margin: 0;
+    width: 100%;
     z-index: 100;
     display: none;
     text-align: left;
