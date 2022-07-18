@@ -106,7 +106,7 @@
 
 .header-collapse.collapsed {
     top: 46px;
-    right: -50%;
+    right: -80%;
     display: flex;
     transition: .5s;
     position: absolute;
