@@ -3,8 +3,8 @@
     z-index: 99;
     height: 50px; 
     display: flex;
-    /* position: relative; */
-    overflow: hidden;
+    /* position: relative */
+    /* overflow: hidden; */
     flex-direction: row;
     background-color: var(--background-magnify-framework);
 }
@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     font-size: 0px;
-    /* position: relative; */
+    /* position: relative */
     flex-basis: auto;
     vertical-align: top;
     display: inline-block;
@@ -29,7 +29,7 @@
 .menu-logo-container {
     height: 100%;
     display: flex;
-    position: relative;
+    /* position: relative */
     overflow-x: visible;
     align-items: center;
     padding: .5rem 0.25rem;
@@ -45,7 +45,7 @@
     height: 100%;
     display: flex;
     cursor: pointer;
-    position: relative;
+    /* position: relative */
     width: fit-content;
     padding-left: 10px;
     padding-right: 10px;
@@ -106,15 +106,20 @@
 
 .header-collapse.collapsed {
     top: 46px;
-    right: -50%;
-    display: flex;
+    right: -100%;
+    /* display: flex; */
     transition: .5s;
     position: absolute;
     width: fit-content;
     overflow-y: scroll;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: calc(100% - 46px);
     background-color: var(--background-magnify-framework);
+}
+
+.header-collapse.collapsed > * {
+    float: none;
+    display: block;
 }
 
 .header-collapse.collapsed.active {

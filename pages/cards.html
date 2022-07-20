@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/header-menu.css" />
+    <link rel="stylesheet" href="./../css/navbar-menu.css" />
+    <link rel="stylesheet" href="./../css/layout.css" />
+    <link rel="stylesheet" href="./../css/form.css" />
+    <link rel="stylesheet" href="./../css/table.css" />
+    <link rel="stylesheet" href="./../css/button.css" />
+    <link rel="stylesheet" href="./../css/containers.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="stylesheet" href="./../css/scrolls.css" />
+    <link rel="stylesheet" href="./../css/loader.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="./../lib/google-symbols/main.css" />
+    <script src="./../utils/jquery/main.js"></script>
+    <script src="./../js/main.js"></script>
+    <title>Design maker - Home</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="header-menu-container">
+            <div class="menu-item-container apps-icon-container">
+                <div class="header-icon-item-container flex align-justify-content-center">
+                    <span class="icon-item material-symbols-outlined">
+                        apps
+                    </span>
+                </div>
+            </div>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <div class="menu-logo-container">
+                        <img class="logo" alt="Image not found" src="./../utils/img/magnify-framework.png" />
+                    </div>
+                    <span class="separator-sm"></span>
+                    <p><strong>Magnify Framework</strong></p>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div id="principal-header-collapse" class="header-collapse hidden-scroll">
+                    <div class="menu left">
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">About us</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu right">
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Buscar</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <div class="menu-item-container dropdown-container">
+                            <div class="menu-item dropdown-toggle" id="header-menu-settings">
+                                <p>Emmanuel Toledo Castro</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    account_circle
+                                </span>
+                                <ul class="dropdown-menu" for-element="header-menu-settings">
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Datos de la cuenta</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Configuración</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-collapse-toggler" to="principal-header-collapse">
+                <span class="icon-item material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="loader-container active" mf-background-color="#000000" mf-page-loader="true">
+                <div class="container">
+                    <div class="loader ripple" mf-loader-background-color="#6e35ae" mf-loader-gradient-background-color="#6e35ae80">
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                    </div>
+                    <p class="loader-text large-font-size font-weight-semibold">Cargando...</p>
+                </div>
+            </div>
+            <div id="left-navbar-container" class="side-navbar-container collapsed">
+                <div class="main-content-container light-scroll">
+                    <div class="navbar-item-container">
+                        <div class="navbar-item" action="collapse-navbar" to="left-navbar-container">
+                            <span class="icon-item material-symbols-outlined">
+                                format_list_bulleted
+                            </span>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                widgets
+                            </span>
+                            <a href="./../index.html" class="navbar-item-link">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                admin_panel_settings
+                            </span>
+                            <a href="./inputs.html" class="navbar-item-link">
+                                Inputs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                list_alt
+                            </span>
+                            <a href="./buttons.html" class="navbar-item-link">
+                                Buttons
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container background-indicator active">
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                public
+                            </span>
+                            <a href="./cards.html" class="navbar-item-link">
+                                Cards
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-container light-scroll">
+                <main class="main-container">
+                    <div class="container">
+                        <!-- Title -->
+                        <div class="title-container left-indicator">
+                            <div class="title-item">
+                                <h2>Cards containers</h2>
+                                <div class="title-left-line-indicator"></div>
+                            </div>
+                        </div>
+                        <!-- Types of cards -->
+                        <div class="container-inline">
+                            <div class="card-container small">
+                                <div class="card light-shadow">
+                                    <div class="card-header">
+                                        <h3 class="card-title">This is a card to view information</h3>
+                                        <span class="icon-item right material-symbols-outlined">
+                                            info
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">Card title</p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="card-link-inline">Click to see the link!</a>
+                                    </div>
+                                    <div class="card-footer text-align-center">
+                                        <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-container small">
+                                <div class="card light-shadow">
+                                    <div class="card-header">
+                                        <h3 class="card-title">This is a card to view information</h3>
+                                        <span class="icon-item right material-symbols-outlined">
+                                            info
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">Card title</p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="card-link-inline">Click to see the link!</a>
+                                    </div>
+                                    <div class="card-footer text-align-center">
+                                        <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-container small">
+                                <div class="card light-shadow">
+                                    <div class="card-header">
+                                        <h3 class="card-title">This is a card to view information</h3>
+                                        <span class="icon-item right material-symbols-outlined">
+                                            info
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">Card title</p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="card-link-inline">Click to see the link!</a>
+                                    </div>
+                                    <div class="card-footer text-align-center">
+                                        <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="card-container regular">
+                            <div class="card light-shadow">
+                                <div class="card-header">
+                                    <h3 class="card-title">This is a card to view information</h3>
+                                    <span class="icon-item right material-symbols-outlined">
+                                        info
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">Card title</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer text-align-center">
+                                    <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="card-container large">
+                            <div class="card light-shadow">
+                                <div class="card-header">
+                                    <h3 class="card-title">This is a card to view information</h3>
+                                    <span class="icon-item right material-symbols-outlined">
+                                        info
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">Card title</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="container-inline">
+                                        <div class="control-button-container">
+                                            <button class="control-button button-danger button-sm rounded">
+                                                Cancel
+                                                <span class="icon-item left material-symbols-outlined"
+                                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    close
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="control-button-container">
+                                            <button class="control-button button-primary button-sm rounded">
+                                                Accept
+                                                <span class="icon-item left material-symbols-outlined"
+                                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                    done
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-align-center">
+                                    <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="column-container column-md-4">
+                                <div class="card-container">
+                                    <div class="card light-shadow">
+                                        <div class="card-header">
+                                            <h3 class="card-title">This is a card to view information</h3>
+                                            <span class="icon-item right material-symbols-outlined">
+                                                info
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-title">Card title</p>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="container-inline">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger button-sm rounded">
+                                                        Cancel
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            close
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-primary button-sm rounded">
+                                                        Accept
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            done
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-align-center">
+                                            <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="card-container">
+                                    <div class="card light-shadow">
+                                        <div class="card-header">
+                                            <h3 class="card-title">This is a card to view information</h3>
+                                            <span class="icon-item right material-symbols-outlined">
+                                                info
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-title">Card title</p>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="container-inline">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger button-sm rounded">
+                                                        Cancel
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            close
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-primary button-sm rounded">
+                                                        Accept
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            done
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-align-center">
+                                            <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container column-md-4">
+                                <div class="card-container">
+                                    <div class="card light-shadow">
+                                        <div class="card-header">
+                                            <h3 class="card-title">This is a card to view information</h3>
+                                            <span class="icon-item right material-symbols-outlined">
+                                                info
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-title">Card title</p>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="container-inline">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger button-sm rounded">
+                                                        Cancel
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            close
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-primary button-sm rounded">
+                                                        Accept
+                                                        <span class="icon-item left material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            done
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-align-center">
+                                            <p class="small-font-size light-text-color">This is a sample footer example for a card component</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

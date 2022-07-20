@@ -1,0 +1,138 @@
+/**
+ * Subject: Containers styles class.
+ * Descripcion: This class contains all the styles for containers in the framework.
+ * Last updated: Jul 15, 2022
+**/
+
+/** Principal container styles **/
+.container {
+    padding: 15px;
+}
+
+/** Inline container styles **/
+.container-inline {
+    position: relative;
+}
+
+.container-inline > * {
+    display: inline-block !important;
+}
+
+/** Title containers styles **/
+.title-container {
+    width: 100%;
+    padding: .4rem 0;
+    position: relative;
+    margin-bottom: 2.188rem;
+}
+
+.title-item {
+    width: fit-content;
+}
+
+.title-container.bottom-indicator .title-bottom-line-indicator {
+    width: 80%;
+    height: 4px;
+    min-height: 3px;
+    margin-top: 10px;
+    background-color: var(--background-magnify-framework);
+}
+
+.title-container.left-indicator {
+    border-left: 4px solid var(--background-magnify-framework);
+    padding-left: 0.875rem;
+}
+
+/** Card element styles **/
+.card-container {
+    display: flex;
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.card-container.small  .card {
+    max-width: 18rem;
+}
+
+.card-container.regular .card {
+    max-width: calc((18rem * 2) + 2.25rem);
+}
+
+.card-container.large .card {
+    max-width: calc((18rem * 3) + 4.55rem);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    border-radius: 0.375rem;
+    border: solid 1px #cccccc;
+    background-color: var(--color-white);
+}
+
+.card .card-top-image {
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.card .card-bottom-image {
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+
+.card .card-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    border-bottom: .5px solid #cccccc;
+}
+
+.card .card-header > * {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card .card-header .header-action {
+    max-width: fit-content;
+}
+
+.card .card-header .icon-item {
+    margin-top: .085rem;
+    max-width: 1.25rem !important;
+    font-size: 1.25rem !important;
+}
+
+.card .card-footer {
+    flex: 1 1 auto;
+    padding: .875rem 1.5rem;
+    border-top: .5px solid var(--color-gray-light);
+}
+
+.card .card-body {
+    padding: 1rem 1.5rem;
+}
+
+.card .card-body :last-child {
+    margin-bottom: 0;
+}
+
+.card-body .card-title {
+    margin-bottom: 1.2rem;
+}
+
+.card-title {
+    font-size: var();
+    font-weight: var(--semibold-font-weight);
+}
+
+.card-text {
+    margin-bottom: 1.5rem;
+}
+
+.card-link-inline+.card-link-inline {
+    margin-left: 1rem;
+    display: inline-block;
+}
