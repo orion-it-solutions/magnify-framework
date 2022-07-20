@@ -1,1 +1,4 @@
 # magnify-framework
+
+
+AGREGAR OVERFLOW X: HIDDEN (CREO SERÍA EN BODY O EN HEADER)
