@@ -106,15 +106,20 @@
 
 .header-collapse.collapsed {
     top: 46px;
-    right: -80%;
-    display: flex;
+    right: -100%;
+    /* display: flex; */
     transition: .5s;
     position: absolute;
     width: fit-content;
     overflow-y: scroll;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: calc(100% - 46px);
     background-color: var(--background-magnify-framework);
+}
+
+.header-collapse.collapsed > * {
+    float: none;
+    display: block;
 }
 
 .header-collapse.collapsed.active {
