@@ -1,10 +1,10 @@
 .header-menu-container {
     width: 100%; 
-    z-index: 99;
     height: 50px; 
+    z-index: 100;
     display: flex;
     /* position: relative */
-    /* overflow: hidden; */
+    overflow: hidden;
     flex-direction: row;
     background-color: var(--background-magnify-framework);
 }
@@ -106,7 +106,6 @@
 
 .header-collapse.collapsed {
     top: 46px;
-    z-index: 99;
     right: -100%;
     /* display: flex; */
     transition: .75s;
