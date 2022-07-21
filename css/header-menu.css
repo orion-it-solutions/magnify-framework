@@ -14,7 +14,7 @@
     height: 100%;
     font-size: 0px;
     /* position: relative */
-    overflow-x: hidden;
+    overflow: hidden;
     flex-basis: auto;
     vertical-align: top;
     display: inline-block;
@@ -102,12 +102,14 @@
 .header-collapse {
     height: 100%;
     width: 100%;
+    overflow: hidden;
     background-color: var(--background-magnify-framework);
 }
 
 .header-collapse.collapsed {
-    top: -100%;
-    right: 0;
+    top: 46px;
+    right: -100%;
+    z-index: 99;
     /* display: flex; */
     transition: .75s;
     position: absolute;
@@ -124,7 +126,7 @@
 }
 
 .header-collapse.collapsed.active {
-    top: 46px;
+    right: 0;
     transition: .5s;
     -o-transition: .5s;
     -ms-transition: .5s;
