@@ -106,8 +106,8 @@
 }
 
 .header-collapse.collapsed {
-    top: 46px;
-    right: -100%;
+    top: -100%;
+    right: 0;
     /* display: flex; */
     transition: .75s;
     position: absolute;
@@ -124,7 +124,7 @@
 }
 
 .header-collapse.collapsed.active {
-    right: 0;
+    top: 46px;
     transition: .5s;
     -o-transition: .5s;
     -ms-transition: .5s;
