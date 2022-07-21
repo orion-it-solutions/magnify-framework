@@ -19,6 +19,7 @@
     vertical-align: top;
     display: inline-block;
     box-sizing: border-box;
+    
 }
 
 .menu-item-container {
@@ -102,31 +103,60 @@
 .header-collapse {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    white-space:nowrap;
     background-color: var(--background-magnify-framework);
 }
 
 .header-collapse.collapsed {
+    right: 0;
     top: 46px;
-    right: -100%;
+    width: 0;
+    /* top: 45px; */
+    /* top: -100%; */
+    /* width: 0; */
+    /* right: 0; */
     z-index: 99;
     /* display: flex; */
-    transition: .75s;
+    /* transition: .75s; */
     position: absolute;
+    /* max-width: 0; */
+    overflow-x: hidden;
+    overflow-y: scroll;
     max-width: fit-content;
-    /* overflow-y: scroll; */
     /* flex-direction: column; */
-    height: calc(100% - 46px);
+    height: calc(100% - 45px);
     background-color: var(--background-magnify-framework);
+    /* float: right; */
+    /* width:0%;
+    overflow:hidden; */
+    /* -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out; */
+    transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
 }
 
 .header-collapse.collapsed > * {
     float: none;
+    width: 240px;
     display: block;
 }
 
 .header-collapse.collapsed.active {
-    right: 0;
+    /* top: 45px;
+    width: 100%;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out; */
+    /* right: 0; */
+    /* width: fit-content; */
+    /* width: auto; */
+    width: 100%;
     transition: .5s;
     -o-transition: .5s;
     -ms-transition: .5s;
