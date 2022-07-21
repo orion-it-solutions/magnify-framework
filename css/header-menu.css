@@ -114,7 +114,7 @@
     transition: .75s;
     position: absolute;
     max-width: fit-content;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* flex-direction: column; */
     height: calc(100% - 46px);
     background-color: var(--background-magnify-framework);
