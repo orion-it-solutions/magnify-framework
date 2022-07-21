@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden !important;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
 }
 
