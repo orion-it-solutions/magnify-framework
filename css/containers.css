@@ -136,3 +136,17 @@
     margin-left: 1rem;
     display: inline-block;
 }
+
+/* Media screen to Tablet application. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 12px;
+    }
+}
+
+/* Media screen to Mobile application. */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+}
