@@ -1,8 +1,65 @@
+.right-column-indicator {
+    padding-right: 25px;
+    white-space: nowrap;
+    border-right: solid 1px #CCCCCC;
+}
+
+.left-column-indicator {
+    padding-left: 20px;
+    white-space: nowrap;
+    border-left: solid 1px #CCCCCC;
+}
+
 .table-container {
     overflow-x: scroll;
 }
 
-.table-container.linear {
+.sample-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sample-table thead {
+    text-align: left;
+    border-bottom: solid 2px var(--background-magnify-framework);
+    height: 40px;
+    color: #A6B5C4;
+}
+
+.sample-table thead tr th {
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+    /* padding-right: 15px; */
+    padding-bottom: 15px;
+    font-weight: var(--semibold-font-weight);
+}
+
+.sample-table tbody tr {
+    height: 60px;
+    background-color: #F6F6F6;
+}
+
+.sample-table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.sample-table tbody tr td {
+    font-size: 15px;
+    color: #A0A0A0;
+    padding-left: 20px;
+}
+
+.sample-table tbody tr td:first-child {
+    font-weight: var(--semibold-font-weight);
+    color: var(--background-magnify-framework);
+}
+
+.sample-table tbody tr td:last-child {
+    padding-right: 20px;
+}
+
+/* .table-container.linear {
     border-left: solid 1px #cccccc;
     border-right: solid 1px #cccccc;
     border-bottom: solid 1px #cccccc;
@@ -59,4 +116,4 @@ table {
 
 .linear-table tbody tr td .icon-item {
     margin-right: 15px;
-}
+} */
