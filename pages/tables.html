@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/header-menu.css" />
+    <link rel="stylesheet" href="./../css/navbar-menu.css" />
+    <link rel="stylesheet" href="./../css/layout.css" />
+    <link rel="stylesheet" href="./../css/form.css" />
+    <link rel="stylesheet" href="./../css/tables.css" />
+    <link rel="stylesheet" href="./../css/button.css" />
+    <link rel="stylesheet" href="./../css/containers.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="stylesheet" href="./../css/scrolls.css" />
+    <link rel="stylesheet" href="./../css/loader.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="./../lib/google-symbols/main.css" />
+    <script src="./../utils/jquery/main.js"></script>
+    <script src="./../js/main.js"></script>
+    <title>Design maker - Home</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="header-menu-container">
+            <div class="menu-item-container apps-icon-container">
+                <div class="header-icon-item-container flex align-justify-content-center">
+                    <span class="icon-item material-symbols-outlined">
+                        apps
+                    </span>
+                </div>
+            </div>
+            <div class="menu-item-container">
+                <div class="menu-item">
+                    <div class="menu-logo-container">
+                        <img class="logo" alt="Image not found" src="./../utils/img/magnify-framework.png" />
+                    </div>
+                    <span class="separator-sm"></span>
+                    <p><strong>Magnify Framework</strong></p>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div id="principal-header-collapse" class="header-collapse hidden-scroll">
+                    <div class="menu left">
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Home</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">About us</a>
+                            </div>
+                        </div>
+                        <div class="menu-item-container">
+                            <div class="menu-item darken-hover">
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu right">
+                        <div class="menu-item-container">
+                            <div class="menu-item">
+                                <p>Buscar</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        <div class="menu-item-container dropdown-container">
+                            <div class="menu-item dropdown-toggle" id="header-menu-settings">
+                                <p>Emmanuel Toledo Castro</p>
+                                <span class="icon-item right material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                    account_circle
+                                </span>
+                                <ul class="dropdown-menu" for-element="header-menu-settings">
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Datos de la cuenta</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Configuración</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item darken-hover" href="#">Cerrar sesión</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-collapse-toggler" to="principal-header-collapse">
+                <span class="icon-item material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="loader-container active" mf-background-color="#000000" mf-page-loader="true">
+                <div class="container">
+                    <div class="loader ripple" mf-loader-background-color="#6e35ae" mf-loader-gradient-background-color="#6e35ae80">
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                        <div class="ripple-child"></div>
+                    </div>
+                    <p class="loader-text large-font-size font-weight-semibold">Cargando...</p>
+                </div>
+            </div>
+            <div id="left-navbar-container" class="side-navbar-container collapsed">
+                <div class="main-content-container light-scroll">
+                    <div class="navbar-item-container">
+                        <div class="navbar-item" action="collapse-navbar" to="left-navbar-container">
+                            <span class="icon-item material-symbols-outlined">
+                                format_list_bulleted
+                            </span>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                widgets
+                            </span>
+                            <a href="./../index.html" class="navbar-item-link">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                admin_panel_settings
+                            </span>
+                            <a href="./inputs.html" class="navbar-item-link">
+                                Inputs
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container darken-hover background-indicator">
+                        <span class="navbar-item-indicator"></span>
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                list_alt
+                            </span>
+                            <a href="./buttons.html" class="navbar-item-link">
+                                Buttons
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container background-indicator">
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                public
+                            </span>
+                            <a href="./cards.html" class="navbar-item-link">
+                                Cards
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item-container background-indicator active">
+                        <div class="navbar-item" action="hyperlink-navbar">
+                            <span class="icon-item material-symbols-outlined">
+                                table
+                            </span>
+                            <a href="./tables.html" class="navbar-item-link">
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content-container light-scroll">
+                <main class="main-container">
+                    <div class="container">
+                        <!-- Title -->
+                        <div class="title-container left-indicator">
+                            <div class="title-item">
+                                <h2>Tables in Magnify Framework</h2>
+                                <div class="title-left-line-indicator"></div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="column-container column-lg-4">
+                                <div class="flex align-items-center">
+                                    <div class="separator-sm"></div>
+                                    <div class="control-container rounded">
+                                        <input id="search" name="search" class="control control-md" type="text" placeholder="Buscar registro por identificador">
+                                        <span class="icon-item material-symbols-outlined" style="font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                            search
+                                        </span>
+                                    </div>
+                                    <div class="separator-sm"></div>
+                                </div>
+                            </div>
+                            <div class="column-container column-lg-2"></div>
+                            <div class="column-container column-lg-2">
+                                <div class="flex align-items-center">
+                                    <div class="separator-sm"></div>
+                                    <div class="control-container rounded select">
+                                        <select id="example-select" name="example-select" class="control">
+                                            <option>---</option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                            <option>Option #4</option>
+                                        </select>
+                                    </div>
+                                    <div class="separator-sm"></div>
+                                </div>
+                            </div>
+                            <div class="column-container column-lg-2">
+                                <div class="flex align-items-center">
+                                    <div class="separator-sm"></div>
+                                    <div class="control-container rounded select">
+                                        <select id="example-select" name="example-select" class="control">
+                                            <option>---</option>
+                                            <option>Option #1</option>
+                                            <option>Option #2</option>
+                                            <option>Option #3</option>
+                                            <option>Option #4</option>
+                                        </select>
+                                    </div>
+                                    <div class="separator-sm"></div>
+                                </div>
+                            </div>
+                            <div class="column-container column-lg-2">
+                                <div class="flex align-items-center">
+                                    <div class="separator-sm"></div>
+                                    <div class="control-button-container width-100-p">
+                                        <button class="control-button rounded" mf-background-color="#6e35ae" mf-color="#FFFFFF">
+                                            <span class="icon-item right material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                refresh
+                                            </span>
+                                            Refrescar
+                                        </button>
+                                    </div>
+                                    <div class="separator-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="table-container light-scroll">
+                            <table class="sample-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <p class="right-column-indicator">Id</p>
+                                        </th>
+                                        <th>
+                                            <p class="right-column-indicator">Nombre</p>
+                                        </th>
+                                        <th>
+                                            <p class="right-column-indicator">Apellidos</p>
+                                        </th>
+                                        <th>
+                                            <p class="right-column-indicator">Genero</p>
+                                        </th>
+                                        <th>
+                                            <p class="right-column-indicator">Fecha de nacimiento</p>
+                                        </th>
+                                        <th>
+                                            <p>Acciones</p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Roberto</td>
+                                        <td>Peréz Ramiréz</td>
+                                        <td>Masculino</td>
+                                        <td>01/01/1990</td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-disabled button-sm rounded">
+                                                        <span class="icon-item right material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            add
+                                                        </span>
+                                                        Aprovar acceso
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            delete_sweep
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-secondary circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            download
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>Maria</td>
+                                        <td>Robles de la Cruz</td>
+                                        <td>Femenino</td>
+                                        <td>16/06/1990</td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-success button-sm rounded">
+                                                        <span class="icon-item right material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            add
+                                                        </span>
+                                                        Aprovar acceso
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            delete_sweep
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-secondary circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            download
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Emmanuel</td>
+                                        <td>Toledo Castro</td>
+                                        <td>Masculino</td>
+                                        <td>30/04/1990</td>
+                                        <td>
+                                            <div class="flex align-items-center">
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-primary button-sm rounded">
+                                                        <span class="icon-item right material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            edit
+                                                        </span>
+                                                        Editar el acceso
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-danger circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            delete_sweep
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <span class="separator-sm"></span>
+                                                <div class="control-button-container">
+                                                    <button class="control-button button-secondary circular button-sm">
+                                                        <span class="icon-item material-symbols-outlined"
+                                                            style="font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 40">
+                                                            download
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
