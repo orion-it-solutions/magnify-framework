@@ -363,17 +363,3 @@ body {
 .padding-0 {
     padding: 0;
 }
-
-/* Media screen to Tablet application. */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .main-container, main {
-        padding: 10px 15px;
-    }
-}
-
-/* Media screen to Mobile application. */
-@media screen and (max-width: 767px) {
-    .main-container, main {
-        padding: 10px 10px;
-    }
-}
