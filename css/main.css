@@ -12,6 +12,9 @@
     --color-white: #FFFFFF;
     --color-gray: #A0A0A0;
     --color-gray-light: #CCCCCC;
+
+    --color-disabled-text: #888888;
+    --color-disabled-container: #D8D8D8;
     
     --small-font-size: 0.875rem;
     --regular-font-size: 1rem;

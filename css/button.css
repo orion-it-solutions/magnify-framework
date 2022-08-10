@@ -240,6 +240,12 @@
     background-color: rgb(0, 98, 202);
 }
 
+.button-disabled,
+.button-disabled:hover {
+    color: var(--color-disabled-text);
+    background-color: var(--color-disabled-container);
+}
+
 .button-warning-outline {
     color: rgb(255, 166, 0);
     background-color: transparent;
@@ -305,3 +311,4 @@
     color: var(--color-white);
     background-color: rgb(0, 123, 255);
 }
+
